@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:BottomTabBarDemo"
+             x:Class="BottomTabBarDemo.MainPage">
+
+    <Grid x:Name="_Grid" RowSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition x:Name ="_ContentRow" Height="*"></RowDefinition>
+            <RowDefinition x:Name ="_NavigationRow" Height="50"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <StackLayout x:Name="_MidLayout" Grid.Row="0"/>
+
+        <Frame HasShadow="True" CornerRadius="0" Grid.Row="1" Padding="0">
+            <Grid HeightRequest="50">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <Image x:Name="_HomeImg" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   HeightRequest="33" 
+                   Grid.Column="0"/>
+
+                <Image x:Name="_HomeImg1" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   HeightRequest="33" 
+                   Grid.Column="0" IsVisible="False"/>
+
+                <Image x:Name="_ListImg" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   HeightRequest="33" 
+                   Grid.Column="1"/>
+
+                <Image x:Name="_ListImg1" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   HeightRequest="33" 
+                   Grid.Column="1" IsVisible="False"/>
+
+                <Image x:Name="_AccountImg" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   HeightRequest="33" 
+                   Grid.Column="2"/>
+
+                <Image x:Name="_AccountImg1" 
+                   HorizontalOptions="Center" 
+                   VerticalOptions="Center" 
+                   HeightRequest="33" 
+                   Grid.Column="2" IsVisible="False"/>
+            </Grid>
+        </Frame>
+    </Grid>
+
+</ContentPage>
